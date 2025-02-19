@@ -6,3 +6,9 @@ function getComputerChoice() {
 
     return choice[Math.floor(Math.random()*choice.length)]
 }
+
+function getHumanChoice() {
+    let choice = prompt("What do you choose?: Rock, Paper, Scissors").toLowerCase()
+
+    return choice
+}
