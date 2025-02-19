@@ -12,3 +12,19 @@ function getHumanChoice() {
 
     return choice
 }
+
+function playRound(humanChoice, computerChoice) {
+    const winConditions = {
+        rock: 'scissors',
+        paper: 'rock',
+        scissors: 'paper'
+    };
+
+    if (humanChoice === computerChoice) {
+        return "Its a tie!"
+    } else if (winConditions[humanChoice] === computerChoice) {
+        return "Human Wins"
+    } else {
+        return "Computer Wins"
+    }
+}
