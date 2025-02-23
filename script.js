@@ -16,16 +16,14 @@ function getComputerChoice() {
  * @returns {string} The user's choice in lowercase.
  */
 function getHumanChoice() {
-    let choice = prompt("What do you choose?: Rock, Paper, Scissors").toLowerCase()
-
-    return choice
+    return prompt("What do you choose?: Rock, Paper, Scissors").toLowerCase()
 }
 
 /**
  * Determines the winner of a rock-paper-scissors round
  * @param {string} humanChoice - The player's choice ('rock', 'paper', or 'scissors')
  * @param {string} computerChoice - The computer's choice ('rock', 'paper', or 'scissors')
- * @returns {string} The result of the round ('Its a tie!', 'Human Wins', or 'Computer Wins')
+ * @returns {string} The result of the round ('It's a tie!', 'Human Wins', or 'Computer Wins')
  */
 function playRound(humanChoice, computerChoice) {
     const winConditions = {
@@ -46,9 +44,9 @@ function playRound(humanChoice, computerChoice) {
 /**
  * Executes a 5-round game of Rock Paper Scissors between a human player and the computer.
  * Keeps track of the score and announces the winner of each round and the final game.
- * The game continues for exactly 5 rounds, regardless of the score.
- * After each round (except the last), announces the next round.
- * At the end, declares the overall winner based on the total score.
+ * The game continues for exactly five rounds, regardless of the score.
+ * After each round (except the last), announce the next round.
+ * In the end, declares the overall winner based on the total score.
  * 
  * @function playGame
  * @returns {void}
